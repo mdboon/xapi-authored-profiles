@@ -1,0 +1,128 @@
+{
+  "@context": "https://w3id.org/xapi/profiles/context",
+  "id": "https://w3id.org/xapi/llm",
+  "type": "Profile",
+  "conformsTo": "https://w3id.org/xapi/profiles#1.0",
+  "prefLabel": {
+    "en": "Large Language Model (LLM) Profile"
+  },
+  "definition": {
+    "en": "The Large Language Model (LLM) Profile describes the Activity Types, Verbs, and Extensions required to capture natural language interactions between Agents where one or more of these Agents are artificial intelligence."
+  },
+  "seeAlso": "",
+  "versions": [
+    {
+      "id": "https://w3id.org/xapi/llm/1.0.0",
+      "generatedAtTime": "",
+      "wasRevisionOf": []
+    }
+  ],
+  "author": {
+    "type": "Organization",
+    "name": "ClearXP"
+  },
+  "concepts": [
+    {
+      "id": "https://w3id.org/xapi/llm/verbs/converse",
+      "inScheme": "https://w3id.org/xapi/llm",
+      "type": "Verb",
+      "definition": {
+        "en": "Full description of the verb."
+      },
+      "prefLabel": {
+        "en": "Conversed"
+      }
+    },
+    {
+      "id": "https://w3id.org/xapi/profilename/activity-types/activityname",
+      "inScheme": "https://w3id.org/xapi/newprofilename",
+      "type": "ActivityType",
+      "definition": {
+        "en": "Full description or purpose of the activity type."
+      },
+      "prefLabel": {
+        "en": "Title of Activity Type"
+      }
+    },
+  {
+      "id": "https://w3id.org/xapi/profilename/extensions/extensionname",
+      "inScheme": "https://w3id.org/xapi/newprofilename",
+      "type": "ActivityExtension",
+      "prefLabel": {
+          "en": "Title of Activity Extension"
+      },
+      "definition": {
+          "en": "Full description or purpose of the extension."
+      },
+      "inlineSchema": "{}"
+  }
+,
+  {
+      "id": "https://w3id.org/xapi/profilename/extensions/extensionname",
+      "inScheme": "https://w3id.org/xapi/newprofilename",
+      "type": "ContextExtension",
+      "prefLabel": {
+          "en": "Title of Context Extension"
+      },
+      "definition": {
+          "en": "Full description or purpose of the extension."
+      },
+      "inlineSchema": "{}"
+  },
+  {
+      "id": "https://w3id.org/xapi/profilename/extensions/extensionname",
+      "inScheme": "https://w3id.org/xapi/newprofilename",
+      "type": "ResultExtension",
+      "prefLabel": {
+          "en": "Title of Result Extension"
+      },
+      "definition": {
+          "en": "Full description or purpose of the extension."
+      },
+      "inlineSchema": "{}"
+  }
+],
+    "templates": [
+        {
+            "id": "https://w3id.org/xapi/newprofilename#templatename",
+            "type": "StatementTemplate",
+            "inScheme": "https://w3id.org/xapi/newprofilename",
+            "prefLabel": {
+                "en": "Restrictions for all of this profile's Statements"
+            },
+            "definition":{
+                "en":""
+            },
+            "verb": "",
+            "rules": [
+                {
+                    "location": "$.id",
+                    "presence": "included"
+                },
+                {
+                    "location": "$.timestamp",
+                    "presence": "included",
+                    "scopeNote": {
+                        "en":""
+                    }
+                }
+            ]
+        }],
+    "patterns": [
+        {
+            "id": "https://w3id.org/xapi/newprofilename5#patternname",
+            "type": "Pattern",
+            "primary": true,
+            "prefLabel": {
+                "en": "Title of Pattern"
+            },
+            "definition": {
+                "en": "Provide a description here."
+            },
+            "inScheme": "https://w3id.org/xapi/newprofilename5",
+            "sequence": ["", ""]
+        }
+
+
+    ]
+}
